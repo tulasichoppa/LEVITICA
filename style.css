@@ -1,0 +1,561 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    top: 0px;
+    box-sizing: border-box;
+}
+
+/*----------------------------------- section 1-------------------- */
+
+.aaa a {
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.aaa p {
+    font-size: 20px;
+    margin-right: 80px;
+    margin-top: 8px;
+    color: white;
+}
+
+.aaa {
+    background-color: rgb(83, 83, 117);
+    height: 50px;
+}
+
+/*---------------------------------------- section 2 ------------------------------*/
+.uma li {
+    font-size: 15px;
+    color: rgb(9, 8, 8);
+    margin-left: 50px;
+
+}
+
+button {
+    padding: 0.5em 1.8em;
+    border: 2px solid #020b0b;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(243, 243, 243);
+    margin-left: 60px;
+    border-radius: 15px;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: rgb(83, 83, 117);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+button:hover {
+    color: #111;
+}
+
+/*---------------------------------- section 3------------------------------------ */
+.you {
+    background: url("https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg");
+    height: 500px;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.you button {
+    margin-top: 60px;
+    border-radius: 10px;
+    background-color: rgb(83, 83, 117);
+}
+
+.you p {
+    font-size: 20px;
+    margin-right: 80px;
+    margin-top: 25px;
+    color: white;
+}
+
+.you h1 {
+    font-size: 40px;
+    margin-right: 80px;
+    margin-top: 25px;
+    color: white;
+
+}
+
+/*--------------------------- section 4---------------------------------- */
+.mom {
+    background-color: rgb(83, 83, 117);
+    height: 560px;
+}
+
+.mom h4 {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: rgb(250, 248, 248);
+}
+
+.mom h1 {
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: rgb(249, 247, 247);
+}
+
+.mom p {
+    margin-left: 40px;
+    margin-top: 20px;
+    color: rgb(248, 244, 244);
+}
+
+.mom img {
+    margin-top: 60px;
+    width: 500px;
+    border-radius: 30px;
+    height: 400px;
+    margin-left: 40px;
+}
+.mom img{
+    filter: brightness(100%);
+}
+.mom img:hover{
+    /* filter: sepia(0%); */
+    /* transition: .8s; */
+    filter: brightness(35%);
+
+}
+
+.mom i {
+    font-size: 50px;
+    margin-left: 80px;
+    color: rgb(246, 244, 244);
+}
+
+.mom h6 {
+    color: rgb(246, 244, 244);
+}
+
+.mom h2 {
+    color: rgb(251, 255, 253);
+}
+
+/* --------------------------- section 5----------------------------- */
+.ggg h4 {
+    font-size: 20px;
+    color: rgb(197, 136, 23);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ggg h1 {
+    font-size: 40px;
+    color: rgb(14, 13, 12);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ggg p {
+    font-size: 15px;
+    color: rgb(14, 13, 12);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    color: #2e2d31;
+    background: rgb(83, 83, 117);
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.temporary_text {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 6px 12px;
+    color: #fafdfb;
+    margin-top: 20px;
+}
+
+.card_title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 20px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+}
+
+.card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+}
+
+.card_title {
+    color: #131313;
+    line-height: 15px;
+}
+
+.card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .card_content {
+    transform: translateY(0);
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+
+/*----------------------------------- section 6 --------------------------------*/
+.mmm {
+    /* background: url("https://wallpaperbat.com/img/287705-what-is-software-piracy-panda-security-mediacenter.jpg"); */
+    /* height: 480px; */
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: 53%;
+    margin-top: 90px;
+    background-color: rgb(83, 83, 117) ;
+    height: 500px;
+}
+.mmm img{
+    position: absolute;
+    margin-top: 1880px;
+    border-radius: 20px;
+}
+.mmm img{
+    filter: brightness(100%);  
+}
+.mmm img:hover{
+
+    filter: brightness(35%);
+}
+.mmm h4{
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.mmm h2{
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 40px;
+
+}
+
+.mmm h4 {
+    margin-top: 43px;
+    color: #f2f2f2;
+}
+
+.mmm h2 {
+    margin-top: 43px;
+    color: #f2f2f2;
+}
+
+.mmm button {
+    margin-top: 30px;
+}
+
+.mmm i {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #fafdfb;
+}
+
+.uu h3 {
+    color: #0a0c0b;
+    margin-left: 20px;
+}
+
+.uu p {
+    color: #0a0b0a;
+    margin-left: 20px;
+}
+.uu h5 i{
+    margin-top: 25px;
+    color: #0a0b0a;
+    font-size: 40px;
+}
+
+
+/*------------------------------------------- section 7 ---------------------------*/
+.lll{
+    background-color: rgb(149, 149, 155);
+}
+.lll h4{
+    font-size: 20px; 
+    margin-top: 20px;
+    margin-right: 50px;
+    color: #f38005;
+
+}
+.lll h2{
+    font-size: 45px; 
+    margin-top: 20px;
+    margin-right: 50px;
+    color: #050907;
+
+}
+.lll p{
+    font-size: 18px; 
+    margin-top: 20px;
+    margin-right: 50px;
+    color: #0a150e;
+
+
+}
+.lll h3{
+color: #111412;
+}
+
+/*------------------------------------ section 8 ------------------------------*/
+.ooo{
+    height: 400px;
+}
+.ooo h6{
+    font-size: 20px; 
+    margin-top: 30px;
+    text-align: center;
+    color: #f38005;
+}
+.ooo h2{
+    font-size: 35px; 
+    margin-top: 30px;
+    text-align: center;
+    color: #050907;
+}
+.ooo p{
+    text-align: center;
+    margin-top: 20px;
+}
+.ooo  i{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 10px;
+    color: rgb(43, 43, 77);
+   
+}
+.ooo h3{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/*--------------------------------------- section 9------------------ */
+.ksr{
+    background: url("https://wallpapercave.com/wp/wp10992174.png");
+    height: 500px;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;   
+    opacity: 0.8;
+    text-align: center;
+    
+}
+.zz h6{
+    color: #f38005;
+    margin-top: 40px;
+    margin-left: 300px;
+    font-size: 20px;
+}
+.zz h2{
+    color: rgb(226, 226, 232);
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.zz{
+    text-align: center;
+    margin-left: 50px;
+}
+.nn{
+    height: 120px;
+    width: 300px;
+    margin-left: 100px;
+    display: flex;
+}
+.gg{
+    height: 120px;
+    width: 100px;
+    margin-left:-570px;
+    border: 1px solid rgb(208, 135, 9);
+    margin-top: 230px;
+    border-radius: 10px;
+    display: flex;
+}
+.gg1{
+    height: 120px;
+    width: 100px;
+    /* margin-left: -200px; */
+    border: 1px solid rgb(218, 153, 13);
+    margin-top: 230px;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 70px;
+
+}
+.gg2{
+    height: 120px;
+    width: 100px;
+    /* margin-left: -200px; */
+    border: 1px solid rgb(209, 136, 11);
+    margin-top: 230px;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 50px;
+
+}
+.gg3{
+    height: 120px;
+    width: 100px;
+    /* margin-left: -200px; */
+    border: 1px solid rgb(195, 104, 25);
+    margin-top: 230px;
+    border-radius: 10px;
+    /* display: flex; */
+    margin-left: 20px;
+
+}
+.gg3 i{
+    margin-top: 30px;
+
+}
+
+.gg p{
+    font-size: 30px;
+    color: white;
+}
+.bb i{
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+}
+
+/*---------------------- section 10 -------------------------------*/
+.fri{
+    background-color: rgb(83, 83, 117) ;
+    margin-top: 50px;
+
+}
+.fri h3{
+    font-size: 20px; 
+    margin-bottom: 5px;
+    
+    color: #0a0909;
+    background-color: #f2f2f2;
+}
+
+.fri h2{
+    font-size: 25px; 
+    margin-bottom: 5px;
+    color: #f2f2f2;
+    margin-left: 25px;
+}
+.fri h5{
+    margin-top: 25px;
+    color: #f2f2f2;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.fri p{ 
+    margin-top: 5px;
+    color: #0c0a0a;
+    font-size: 15px;
+    background-color: #f2f2f2;
+}
+
+.fri i{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.fri h6{
+    color: #f2f2f2;
+    margin-top: 15px;
+}
+
+.fri h4{
+    color: #f2f2f2;
+    margin-top: 10px;
+}
+.vv{
+    margin-top: 30px;
+}
+.ev{
+    height: 110px;
+    width: 300px;
+border-radius: 20px;
+/* text-align: center; */
+color: rgb(7, 7, 7);
+background-color: white;
+}
+.ev h5{
+    color: black;
+    margin-left: 20px;
+}
+.ev h6{
+    color: black;
+    margin-left: 20px;
+
+}
+
+
